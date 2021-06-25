@@ -33,7 +33,8 @@ public class FinomGroupTabFunctionality {
 	
 	@Then("I should be directed to {string}")
 	public void i_should_be_directed_to(String string) {
-	    
+
+	    Assert.assertTrue(tradePage.finomGroupHomePageTitleLogo.isDisplayed());
 	}
 
 

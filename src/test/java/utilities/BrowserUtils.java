@@ -55,6 +55,7 @@ public class BrowserUtils {
 	
 	}
 }
+	
 	public void clearValueOfTheField(WebElement element) throws InterruptedException {
 		String temp =element.getAttribute("value");
 		for(int i = 0; i < temp.length(); i++) {

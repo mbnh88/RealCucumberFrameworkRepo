@@ -1,3 +1,5 @@
+@TestTag
+
 Feature: Finom Group Tab Functionality
 	User should be able to click the Finom Group tab and be directed to the Finom website
 	
