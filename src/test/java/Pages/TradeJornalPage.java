@@ -1,5 +1,7 @@
 package Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -31,7 +33,7 @@ public class TradeJornalPage {
 	@FindBy(xpath="//li[@class='nav-item active']//a[@class='nav-link']")
 	public WebElement homePageTab;
 	
-	@FindBy(css=".btn.btn-primary.btn-sm.mb-3")
+	@FindBy(linkText="Add trade")
 	public WebElement addTradeBtn;
 	
 	//SaveTrade WebElements
@@ -107,7 +109,34 @@ public class TradeJornalPage {
 	@FindBy (xpath= "//button[text()='Search']")
 	public WebElement searchButton;
 	
+	@FindBy (xpath="//table[@class='table table-bordered table-striped']")
+	public WebElement searchTableLocator;
+	
+	@FindBy(xpath="//table[@class='table table-bordered table-striped']/tbody/tr/td[3]")
+	public List <WebElement> dataTableOpenDate;
+	
+	@FindBy(xpath="//table[@class='table table-bordered table-striped']/tbody/tr/td[5]")
+	public List <WebElement> dataTableExitDate;
+	
+	@FindBy(xpath="//table[@class='table table-bordered table-striped']/tbody/tr/td[2]")
+	public List <WebElement> dataTableSymbol;
+	
+	@FindBy (xpath="//table[@class='table table-bordered table-striped']/tbody/tr")
+	public WebElement searchTableFirstRow;
+	
+	@FindBy (xpath="/html/body/div/table/tbody/tr/td[8]/a[1]")
+	public WebElement updateSearchBTTN;
+	
+	//Logout Functionality
 	@FindBy (xpath="//button[text()='Logout']")
 	public WebElement logoutBtn;
 	
+	@FindBy(xpath="//h2[text()='Are you sure you want to log out?']")
+	public WebElement logoutPageText;
+	
+	@FindBy(xpath="//button[@class='btn btn-lg btn-primary btn-block']")
+	public WebElement logoutPageButton;
+	
+	@FindBy (xpath="//div[text()='You have been signed out']")
+	public WebElement successfulLogoutMessage;
 }
