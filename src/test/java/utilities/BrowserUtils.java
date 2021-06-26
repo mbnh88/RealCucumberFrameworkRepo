@@ -1,5 +1,7 @@
 package utilities;
 
+import java.util.Set;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -19,6 +21,11 @@ public class BrowserUtils {
 	public void waitUntilElementIsVisible(WebElement ELEMENT) {
 		 wait= new WebDriverWait(Driver.getDriver(), 10);
 		  wait.until(ExpectedConditions.visibilityOf(ELEMENT));
+		}
+	
+	public void waitUntilTitleIs(WebElement ELEMENT, String title) {
+		 wait= new WebDriverWait(Driver.getDriver(), 10);
+		  wait.until(ExpectedConditions.titleIs(title));
 		}
 	
 	public void switchToAlert() {
@@ -60,9 +67,18 @@ public class BrowserUtils {
 		String temp =element.getAttribute("value");
 		for(int i = 0; i < temp.length(); i++) {
 			element.sendKeys(Keys.BACK_SPACE);
-			
-	}
+		}
 	}
 	
-
+	public void switchBrowserWindow() {
+		String parentWindow = Driver.getDriver().getWindowHandle();
+		Set<String> handles = Driver.getDriver().getWindowHandles();
+		for (String windowHandle : handles) {
+			if (!windowHandle.equals(parentWindow)) {
+				Driver.getDriver().switchTo().window(windowHandle);
+			}
+		}
+	}
+	
+	
 }

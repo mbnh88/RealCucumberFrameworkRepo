@@ -110,7 +110,7 @@ public class TradeJornalPage {
 	@FindBy (xpath="//button[text()='Logout']")
 	public WebElement logoutBtn;
 	
-	@FindBy(xpath = "//img[@id='logo_img']")
-	public WebElement finomGroupHomePageTitleLogo;
+	@FindBy(id= "//*[@id='logo_img']")
+	public WebElement finomHomeLogo;
 	
 }
