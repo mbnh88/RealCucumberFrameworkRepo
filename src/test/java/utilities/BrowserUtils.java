@@ -1,5 +1,7 @@
 package utilities;
 
+import java.util.List;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -46,6 +48,24 @@ public class BrowserUtils {
 		letsSelect= new Select(element);
 		letsSelect.selectByVisibleText(optionToSelect);
 	}
+	
+	public String getTextofFirstSelectOption(WebElement element) {
+		letsSelect = new Select(element);
+		return letsSelect.getFirstSelectedOption().getText();
+	}
+	
+	public boolean getAllSelectOptions(WebElement element, String option) {
+		letsSelect = new Select(element);
+		 List<WebElement> allOptions = letsSelect.getOptions();
+		 
+		 for (WebElement listItem : allOptions) {
+			if (listItem.getText().equals(option)) {
+				return true;
+			}
+		}
+		 return false;
+	}
+	
 	public void toClear(WebElement element) throws InterruptedException {
 		for(int i = 0; i < element.getText().length(); i++) {
 			element.sendKeys(Keys.COMMAND + "a");
