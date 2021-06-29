@@ -113,4 +113,14 @@ public class TradeJornalPage {
 	@FindBy(id= "//*[@id='logo_img']")
 	public WebElement finomHomeLogo;
 	
+	
+	@FindBy(xpath= "//span[@class='p-ia__sidebar_header__team_name_text']")
+	public WebElement PrimeTechSlackLogo;
+	
+	
+	@FindBy(xpath= "//*[@id='signin_btn']")
+	public WebElement slackSignInBtn;
+	
+	@FindBy(xpath= "//*[@id=\"page_contents\"]/div/div/header/div[2]/a/img")
+	public WebElement slackLogo;
 }
