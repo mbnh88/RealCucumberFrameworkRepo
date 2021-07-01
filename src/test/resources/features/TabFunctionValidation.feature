@@ -26,7 +26,7 @@ Feature: Homepage tabs functionality
 	Scenario: As a user, I should be directed to the Options Calculator homepage when I click on the Tools dropdown and select Options Calculator 
 	Given I have clicked on the Tools dropdown
 	When I click the Options Calculator option
-	Then I should be directed to the Options Calculator homepage titled "Options Calculator"
+	Then I should be directed to the Options Calculator homepage titled "The Options Industry Council (OIC) - Optionscalculator"
 	
 	@ToolsTab
 	Scenario: As a user, I should be directed to the Vol ETF/ETN Price Converter homepage when I click on the Tools dropdown and select Vol ETF/ETN Price Converter
@@ -37,5 +37,5 @@ Feature: Homepage tabs functionality
 	@ToolsTab
 	Scenario: As a user, I should be directed to the Finviz homepage when I click on the Tools dropdown and select Today’s Market Info
 	Given I have clicked on the Tools dropdown
-	When I click the Today’s Market Info option
+	When I click the Todays Market Info option
 	Then I should be directed to the Finviz Stock Screener homepage titled "Finviz"
