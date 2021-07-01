@@ -1,5 +1,8 @@
 package step_definitions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -138,7 +141,9 @@ public class SearchFunctionalityTestSteps {
 	@Then("The system should filter the existing list of trades associated with the Symbol and DATE")
 	public void the_system_should_filter_the_existing_list_of_trades_associated_with_the_symbol_and_date() {
 		utils.waitUntilElementIsVisible(page.searchTableLocator);
+		List <String> list= new ArrayList<>();
 	    for(WebElement element : page.dataTableSymbol) {
+	    	//list.add(page.dataTableSymbol.getText(i));
 	    	String actualStockSymbol = element.getText();
 	    	boolean flag= false;
 	    	if(actualStockSymbol.equals(inputSymbol)) {
@@ -183,7 +188,7 @@ public class SearchFunctionalityTestSteps {
 	
 
 	@When("there are no matching records")
-	public void there_are_no_matching_records() {
+	public void there_are_no_matching_records() throws InterruptedException {
 		utils.waitUntilElementIsVisible(page.searchTableLocator);
 	    for(WebElement element : page.dataTableSymbol) {
 	    	String actualStockSymbol = element.getText();
@@ -193,6 +198,8 @@ public class SearchFunctionalityTestSteps {
 	    		Assert.assertTrue(flag);
 	    		break;
 	    	}
+	    	page.deleteBttn.click();
+	    	Thread.sleep(1000);
 	    }
 	}
 

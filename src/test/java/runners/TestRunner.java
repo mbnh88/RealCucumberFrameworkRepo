@@ -11,8 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		"json:Reports/jsonReport.json"},
 		features="./src/test/resources/features",
 		glue="step_definitions",
-		dryRun=true,
-		tags="@SearchFunctionalityNoMatch"
+		dryRun=false,
+		tags="@Regression"
 		)
 
 public class TestRunner {
