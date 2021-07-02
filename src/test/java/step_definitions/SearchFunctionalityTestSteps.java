@@ -20,6 +20,7 @@ public class SearchFunctionalityTestSteps {
 	String inputSymbol;
 	String entryDate;
 	String exitDate;
+	boolean noSuchElement;
 	@Given("I am logged in tot the Stock Trade applications")
 	public void i_am_logged_in_tot_the_stock_trade_applications() {
 		Driver.getDriver().get("http://ec2-3-142-242-205.us-east-2.compute.amazonaws.com:8080/login");
@@ -141,7 +142,7 @@ public class SearchFunctionalityTestSteps {
 	@Then("The system should filter the existing list of trades associated with the Symbol and DATE")
 	public void the_system_should_filter_the_existing_list_of_trades_associated_with_the_symbol_and_date() {
 		utils.waitUntilElementIsVisible(page.searchTableLocator);
-		List <String> list= new ArrayList<>();
+		//List <String> list= new ArrayList<>();
 	    for(WebElement element : page.dataTableSymbol) {
 	    	//list.add(page.dataTableSymbol.getText(i));
 	    	String actualStockSymbol = element.getText();
@@ -193,20 +194,32 @@ public class SearchFunctionalityTestSteps {
 	    for(WebElement element : page.dataTableSymbol) {
 	    	String actualStockSymbol = element.getText();
 	    	boolean flag= false;
-	    	if(actualStockSymbol.equals(inputSymbol)) {
+	    	if(actualStockSymbol.equals("viac")) {
 	    		flag=true;
 	    		Assert.assertTrue(flag);
 	    		break;
+	    	} else {
+	    		Assert.assertFalse(flag);
 	    	}
 	    	page.deleteBttn.click();
+	    	Thread.sleep(1000);
+	    	utils.switchToAlert();
+	    	utils.acceptAlert();
 	    	Thread.sleep(1000);
 	    }
 	}
 
 	@Then("the system should display an empty table")
 	public void the_system_should_display_an_empty_table() {
-	       Assert.assertFalse(page.updateSearchBTTN.isDisplayed());
-	       
+	      try { 
+	    	  noSuchElement= false;
+	    	  Assert.assertFalse(page.updateSearchBTTN.isDisplayed());
+	      } catch (Exception e) {
+	    	  noSuchElement=true;
+	    	  Assert.assertTrue(noSuchElement);
+	      }
+
 	}
+
 
 }
