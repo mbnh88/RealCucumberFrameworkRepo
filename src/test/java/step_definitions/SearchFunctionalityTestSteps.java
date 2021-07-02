@@ -185,6 +185,7 @@ public class SearchFunctionalityTestSteps {
 	@When("I enter a Symbol or date")
 	public void i_enter_a_symbol_or_date() {
 	    page.symbolBox.sendKeys("viac");
+	    page.searchButton.click();
 	}
 	
 
@@ -201,11 +202,11 @@ public class SearchFunctionalityTestSteps {
 	    	} else {
 	    		Assert.assertFalse(flag);
 	    	}
-	    	page.deleteBttn.click();
-	    	Thread.sleep(1000);
-	    	utils.switchToAlert();
-	    	utils.acceptAlert();
-	    	Thread.sleep(1000);
+	    	//page.deleteBttn.click();
+	    	//Thread.sleep(1000);
+	    	//utils.switchToAlert();
+	    	//utils.acceptAlert();
+	    	//Thread.sleep(1000);
 	    }
 	}
 
