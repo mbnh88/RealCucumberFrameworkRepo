@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="./src/test/resources/features",
 		glue="step_definitions",
-		dryRun=false, tags = "@ToolsTab"
+		dryRun=false, tags = "@Tabs"
 		)
 
 public class TestRunner {

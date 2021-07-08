@@ -1,5 +1,7 @@
 package step_definitions;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 
 import Pages.TradeJornalPage;
@@ -24,6 +26,8 @@ public class TabFunctionalities {
 		tradePage.password.sendKeys("SuperMarat123!");
 		tradePage.SignInBtn.click();
 		Assert.assertTrue(tradePage.homePageTab.isDisplayed());
+		Driver.getDriver().manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+
 	}
 
 	// Finom Tab
@@ -97,15 +101,23 @@ public class TabFunctionalities {
 	@When("I click the Vol ETF\\/ETN Price Converter option")
 	public void i_click_the_vol_etf_etn_price_converter_option() {
 		tradePage.priceConverter.click();
-		utils.switchBrowserWindow();
+//		Driver.getDriver().manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+
 	}
 
 	@Then("I should be directed to the Vol ETF\\/ETN Price Converter homepage titled {string}")
 	public void i_should_be_directed_to_the_vol_etf_etn_price_converter_homepage_titled(String string) {
-		//utils.switchBrowserWindow();
+		
+//		try {
+//			utils.waitUntilTitleIs(string);
+//			// utils.switchBrowserWindow();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 		utils.waitUntilTitleIs(string);
 		String actualTitle = Driver.getDriver().getTitle();
 		Assert.assertEquals(actualTitle, string);
+
 	}
 
 	// Today's Market Info
@@ -119,6 +131,7 @@ public class TabFunctionalities {
 	public void i_should_be_directed_to_the_finviz_stock_screener_homepage_titled(String string) {
 		utils.waitUntilElementIsVisible(tradePage.todaysMarketPage);
 		String actualTitle = Driver.getDriver().getTitle();
+		System.out.println(actualTitle);
 		Assert.assertEquals(actualTitle, string);
 	}
 
