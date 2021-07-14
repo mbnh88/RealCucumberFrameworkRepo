@@ -14,7 +14,7 @@ private static Properties config;
 	static {
 		
 		try {
-			File file = new File("./src/test/resources/testData/environmentVariables.properties");
+			File file = new File("./src/test/resources/env_variables/env_variables.properties");
 			FileInputStream input = new FileInputStream(file);
 		    config = new Properties();
 			config.load(input);
