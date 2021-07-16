@@ -45,7 +45,7 @@ public class TabFunctionalities {
 		Assert.assertEquals(actualTitle, string);
 	}
 
-	// Slack test logged in
+	// Slack test logged In
 	@When("I click on the tab titled Slack Channel")
 	public void i_click_on_the_tab_titled_slack_channel() {
 		tradePage.slackChannelTab.click();
