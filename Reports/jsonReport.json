@@ -1,0 +1,1829 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-29T15:38:05.238Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3145001300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "As a user I should be able to enter values and use all the fields on the Add Trade page.",
+        "description": "",
+        "id": "create-add-trade-functionality;as-a-user-i-should-be-able-to-enter-values-and-use-all-the-fields-on-the-add-trade-page.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1111646100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1715652000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am external user logged in to the Stock Trade Tracking application",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_am_external_user_logged_in_to_the_stock_trade_tracking_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 328478700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the Add a Trade button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_the_add_a_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59838500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be directed to a new page with Save Trade as the page heading",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_should_be_directed_to_a_new_page_with_save_trade_as_the_page_heading()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 336277000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Drop Down with the following options \"Sell to Open\" selected by default and \"Buy to Open\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sell to Open\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"Buy to Open\"",
+                  "offset": 76
+                }
+              ],
+              "location": "step_definitions.AddTradeFields.drop_down_with_the_following_options_selected_by_default_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158574900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Symbol textbox which accepts a string \"WER-GH-5fO\" 10 characters in length",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"WER-GH-5fO\"",
+                  "offset": 38
+                },
+                {
+                  "val": "10",
+                  "offset": 51
+                }
+              ],
+              "location": "step_definitions.AddTradeFields.symbol_textbox_which_accepts_a_string_characters_in_length(java.lang.String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169077200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Date1 textbox which accepts a \"06/25/2021\" value typed by the user or a date picked in the calender picker component",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"06/25/2021\"",
+                  "offset": 30
+                }
+              ],
+              "location": "step_definitions.AddTradeFields.date1_textbox_which_accepts_a_value_typed_by_the_user_or_a_date_picked_in_the_calender_picker_component(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172281800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Entry price Text box which takes a \"9.99\" value that is a double",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9.99\"",
+                  "offset": 35
+                }
+              ],
+              "location": "step_definitions.AddTradeFields.entry_price_text_box_which_takes_a_value_that_is_a_double(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217575900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Date2 textbox which accepts a \"10/27/2022\" type Date, typed by the user or a date picked in the calender picker component",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/27/2022\"",
+                  "offset": 30
+                }
+              ],
+              "location": "step_definitions.AddTradeFields.date2_textbox_which_accepts_a_type_date_typed_by_the_user_or_a_date_picked_in_the_calender_picker_component(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206446600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Exit price text box which takes a \"500.0\" value that is a double",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500.0\"",
+                  "offset": 34
+                }
+              ],
+              "location": "step_definitions.AddTradeFields.exit_price_text_box_which_takes_a_value_that_is_a_double(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@AddTradeFieldsValidation"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:13.129Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1927931500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "As a user I should be able to provide valid data to all the fields and save them.",
+        "description": "",
+        "id": "create-add-trade-functionality;as-a-user-i-should-be-able-to-provide-valid-data-to-all-the-fields-and-save-them.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1310170700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1552618400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I am external user logged in to the Stock Trade Tracking application",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_am_external_user_logged_in_to_the_stock_trade_tracking_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 298957300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on the Add a Trade button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_the_add_a_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62122400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should be directed to a new page with Save Trade as the page heading",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_should_be_directed_to_a_new_page_with_save_trade_as_the_page_heading()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 126408400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I select \"Sell to Open\" on the dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sell to Open\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_select_on_the_dropdown(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 153352400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter \"FF-TY\" on the Symbol field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FF-TY\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_on_the_symbol_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 108654900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter \"06/25/2021\" in the entry date field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"06/25/2021\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_in_the_entry_date_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 97907300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I enter \"9.99\" for the entry price field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9.99\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_for_the_entry_price_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115263500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I enter \"10/27/2022\" in the closing date field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/27/2022\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_in_the_closing_date_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97908100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I enter \"500.0\" to the exit price field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500.0\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_to_the_exit_price_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 234992800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on Save button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 60823500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "there are no issues with the fields submitted",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.there_are_no_issues_with_the_fields_submitted()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1189417400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The trade information entered by the user should be saved in the application database.",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.the_trade_information_entered_by_the_user_should_be_saved_in_the_application_database()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SaveTradeWithDBValidation"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:20.498Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1920777300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "As a user I should be able to provide valid data to all the fields and save them.",
+        "description": "",
+        "id": "create-add-trade-functionality;as-a-user-i-should-be-able-to-provide-valid-data-to-all-the-fields-and-save-them.;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1361754600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1683294100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I am external user logged in to the Stock Trade Tracking application",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_am_external_user_logged_in_to_the_stock_trade_tracking_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 291709000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on the Add a Trade button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_the_add_a_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43883800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should be directed to a new page with Save Trade as the page heading",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_should_be_directed_to_a_new_page_with_save_trade_as_the_page_heading()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 107735500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I select \"Buy to Open\" on the dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Buy to Open\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_select_on_the_dropdown(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 107711700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter \"TY-bbnt-34\" on the Symbol field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TY-bbnt-34\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_on_the_symbol_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 120090600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter \"06/27/2021\" in the entry date field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"06/27/2021\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_in_the_entry_date_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 111439600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I enter \"113.55\" for the entry price field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"113.55\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_for_the_entry_price_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105665500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I enter \"10/27/2023\" in the closing date field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10/27/2023\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_in_the_closing_date_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118702900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I enter \"45.56\" to the exit price field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"45.56\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.SaveTradeDBValidation.i_enter_to_the_exit_price_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 228433400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on Save button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61438400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "there are no issues with the fields submitted",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.there_are_no_issues_with_the_fields_submitted()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 564180000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The trade information entered by the user should be saved in the application database.",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.the_trade_information_entered_by_the_user_should_be_saved_in_the_application_database()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SaveTradeWithDBValidation"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:27.359Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1832359100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "as a user I should be promted a",
+        "description": "     warning message whenever I enter invalid data or leave a field empty",
+        "id": "create-add-trade-functionality;as-a-user-i-should-be-promted-a",
+        "after": [
+          {
+            "result": {
+              "duration": 895632800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1502602000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I am external user logged in to the Stock Trade Tracking application",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_am_external_user_logged_in_to_the_stock_trade_tracking_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 335383400,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I click on the Add a Trade button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_the_add_a_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42886500,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I should be directed to a new page with Save Trade as the page heading",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_should_be_directed_to_a_new_page_with_save_trade_as_the_page_heading()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76823900,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I click on Save button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_save_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68311600,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "the system should display the error message \"Please fill out this field.\" for the Symbol input field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "step_definitions.AddTradeInvalidTest.the_system_should_display_the_error_message_for_the_symbol_input_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 80271300,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I enter \"AMZN-AWS\" for the Symbol",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AMZN-AWS\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.AddTradeInvalidTest.i_enter_for_the_symbol(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55879100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I click on Save button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29919400,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "the system should display the error message \"Please fill out this field.\" for the Entry Date input field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "step_definitions.AddTradeInvalidTest.the_system_should_display_the_error_message_for_the_entry_date_input_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 240103300,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I enter \"01/04/2021\" in the Entry date field and \"15\" in the entry price field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01/04/2021\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"15\"",
+                  "offset": 49
+                }
+              ],
+              "location": "step_definitions.AddTradeInvalidTest.i_enter_in_the_entry_date_field_and_in_the_entry_price_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98735300,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I click on Save button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41885700,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "the system should display the error message \"Please fill out this field.\" for the Exit Date input field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "step_definitions.AddTradeInvalidTest.the_system_should_display_the_error_message_for_the_exit_date_input_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 128710400,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I enter \"05/07/2022\" in the Exit Date input field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/07/2022\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.AddTradeInvalidTest.i_enter_in_the_exit_date_input_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76275600,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I click on Save button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44814000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "the system should display the error message \"Please fill out this field.\" for the Exit Price input field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field.\"",
+                  "offset": 44
+                }
+              ],
+              "location": "step_definitions.AddTradeInvalidTest.the_system_should_display_the_error_message_for_the_exit_proce_input_field(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SaveTradeINVALID"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:32.967Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1952557200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 63,
+        "name": "As a user I should be able to see all my saved transactions on the Trade table",
+        "description": "",
+        "id": "create-add-trade-functionality;as-a-user-i-should-be-able-to-see-all-my-saved-transactions-on-the-trade-table",
+        "after": [
+          {
+            "result": {
+              "duration": 1184774800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1535567100,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I am external user logged in to the Stock Trade Tracking application",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_am_external_user_logged_in_to_the_stock_trade_tracking_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 266837000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I click on the Add a Trade button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_the_add_a_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40998900,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I should be directed to a new page with Save Trade as the page heading",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_should_be_directed_to_a_new_page_with_save_trade_as_the_page_heading()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 828444900,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I have Saved a trade with following data",
+            "match": {
+              "location": "step_definitions.TradeTableSavedDataValidation.i_have_saved_a_trade_with_following_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Buy to Open",
+                  "ARDB-RT",
+                  "06/27/2021",
+                  "13.55",
+                  "10/27/2023",
+                  "45.56"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85767800,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I should be directed to the home page",
+            "match": {
+              "location": "step_definitions.TradeTableSavedDataValidation.i_should_be_directed_to_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 204447600,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I click on the Add a Trade button",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_click_on_the_add_a_trade_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31931200,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I should be directed to a new page with Save Trade as the page heading",
+            "match": {
+              "location": "step_definitions.SaveTradeDBValidation.i_should_be_directed_to_a_new_page_with_save_trade_as_the_page_heading()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 180683400,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I click on the Back to Transactions Link,",
+            "match": {
+              "location": "step_definitions.TradeTableSavedDataValidation.i_click_on_the_back_to_transactions_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89818000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I should be directed to the home page",
+            "match": {
+              "location": "step_definitions.TradeTableSavedDataValidation.i_should_be_directed_to_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 489339100,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I should see all the data that I entered and saved in the Save Trade page",
+            "match": {
+              "location": "step_definitions.TradeTableSavedDataValidation.i_should_see_all_the_data_that_i_entered_and_saved_in_the_save_trade_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27924600,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "Gain Loss value should be equal to 45.56 decreased by 13.55 devided by entry price times 100 and rounded to one decimal place",
+            "match": {
+              "arguments": [
+                {
+                  "val": "45.56",
+                  "offset": 35
+                },
+                {
+                  "val": "13.55",
+                  "offset": 54
+                },
+                {
+                  "val": "100",
+                  "offset": 89
+                }
+              ],
+              "location": "step_definitions.TradeTableSavedDataValidation.gain_loss_value_should_be_equal_to_decreased_by_devided_by_entry_price_times_and_rounded_to_one_decimal_place(java.lang.Double,java.lang.Double,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21943200,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "If the Gain/Loss value results in Gain then the row should be in black font if its Loss then the row should be in red font",
+            "match": {
+              "location": "step_definitions.TradeTableSavedDataValidation.if_the_gain_loss_value_results_in_gain_then_the_row_should_be_in_black_font_if_its_loss_then_the_row_should_be_in_red_font()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 339915900,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "Action Column with \"Update\" and \"Delete\" buttons",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Update\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Delete\"",
+                  "offset": 32
+                }
+              ],
+              "location": "step_definitions.TradeTableSavedDataValidation.action_column_with_and_buttons(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@BackToTransactionFunctionality"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Create Add Trade Functionality",
+    "description": "  As a user I should be able to add a trade and track all its data on the trade table.",
+    "id": "create-add-trade-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddTradeFunctionality.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1402747800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am logged into the Trade Journal Application",
+            "match": {
+              "location": "step_definitions.LogoutFunctionalityTestSteps.i_am_logged_into_the_trade_journal_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 86772700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "step_definitions.LogoutFunctionalityTestSteps.i_am_on_the_homepage()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:40.282Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1763643400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Logout Functionality",
+        "description": "    As a user I should be able to logout of my account",
+        "id": "trade-journal-logout-functionality;logout-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 895522400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 162742100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click the Logout button",
+            "match": {
+              "location": "step_definitions.LogoutFunctionalityTestSteps.i_click_the_logout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75824200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be on a new page",
+            "match": {
+              "location": "step_definitions.LogoutFunctionalityTestSteps.i_should_be_on_a_new_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29917400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "see the following message: \"Are you sure you want to log out?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Are you sure you want to log out?\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.LogoutFunctionalityTestSteps.see_the_following_message(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175532200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click the LogoutPage button",
+            "match": {
+              "location": "step_definitions.LogoutFunctionalityTestSteps.i_click_the_logoutPage_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44878000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should be succesfully logged out",
+            "match": {
+              "location": "step_definitions.LogoutFunctionalityTestSteps.i_should_be_succesfully_logged_out()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37228400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see the Trade Journal Login page",
+            "match": {
+              "location": "step_definitions.LogoutFunctionalityTestSteps.i_should_see_the_trade_journal_login_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@LogoutTest"
+          }
+        ]
+      }
+    ],
+    "name": "Trade Journal Logout functionality",
+    "description": "",
+    "id": "trade-journal-logout-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LogoutFunctionality.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1497302500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am logged in tot the Stock Trade applications",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_am_logged_in_tot_the_stock_trade_applications()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88762500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the TJ home page",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_am_on_the_tj_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:45.059Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2006757300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "search functionality valid Symbol test",
+        "description": "",
+        "id": "trade-jorunal-search-functionality-valid-tests;search-functionality-valid-symbol-test",
+        "after": [
+          {
+            "result": {
+              "duration": 872806900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I enter a value for ‘Symbol\u0027 textbox,",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I click on the \u0027Search’ Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "The system should filter the existing list of trades associated with the Symbol",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Once the system fetches the records it should only display the records matching the user’s filters.",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@SearchFunctionalitySymobl"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1367501300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am logged in tot the Stock Trade applications",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_am_logged_in_tot_the_stock_trade_applications()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 255299900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the TJ home page",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_am_on_the_tj_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:49.616Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1954470000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "search functionality valid date test",
+        "description": "",
+        "id": "trade-jorunal-search-functionality-valid-tests;search-functionality-valid-date-test",
+        "after": [
+          {
+            "result": {
+              "duration": 903682000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I enter a value for ‘Date\u0027 textbox,",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I click on the \u0027Search’ Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997200,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "The system should filter the existing list of trades associated with the Date",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.the_system_should_filter_the_existing_list_of_trades_associated_with_the_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Once the system fetches the records it should only display the records matching the user’s filters.",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@SearchFunctionalityDate"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1513014000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am logged in tot the Stock Trade applications",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_am_logged_in_tot_the_stock_trade_applications()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 92751800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the TJ home page",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_am_on_the_tj_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:54.140Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1961011700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "search functionality valid symbol and date test",
+        "description": "",
+        "id": "trade-jorunal-search-functionality-valid-tests;search-functionality-valid-symbol-and-date-test",
+        "after": [
+          {
+            "result": {
+              "duration": 1007051900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I enter a value for ‘Symbol\u0027 textbox,",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I enter a value for \u0027Date\u0027 textbox",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I click on the \u0027Search’ Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "The system should filter the existing list of trades associated with the Symbol and DATE",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.the_system_should_filter_the_existing_list_of_trades_associated_with_the_symbol_and_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "Once the system fetches the records it should only display the records matching the user’s filters.",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@SearchFunctionalitySymbolDate"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1384569200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am logged in tot the Stock Trade applications",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_am_logged_in_tot_the_stock_trade_applications()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78787200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the TJ home page",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_am_on_the_tj_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-29T15:38:58.750Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2016044000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "search functionality no matching records",
+        "description": "",
+        "id": "trade-jorunal-search-functionality-valid-tests;search-functionality-no-matching-records",
+        "after": [
+          {
+            "embeddings": [
+              {
+                "data": "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cTA9lUoRBEG7+trOWa7P8zy2bdvGU089xR133EF9fT2lUokoiuLwe+/evTn11FO57LLLGDhwIJlMpt0xMgyDwYMH061btzi8X94XEREREREREREREREREREREREREdl76uAuIiIdymQyhGFIqVTCNE0syyIMQ4rFYtyhvNw13bIsoiiK102n0/i+j+u67YLsURSRTqcJgqDduOVAejqdjoPs5XHLcyaTSVKpVNxJvjxuqVTCMAzS6XQckE8mkySTybjLe3nctnM2Nzfz6KOPctddd9HY2EgURfG+m6ZJNptl4sSJXH/99VRWVnL44Yfz61//mpUrV8brGoZBdXU1hmFgmmbcsd7zPCw7fSAfLhEREREREREREREREREREREREZFDggLuIiLSIdM0iaKIMAzjAHcYhnGH87Jyx/UgCAjDENM04+XlsDlAGIbxuGEYEoYhiUQC0zQJgiAe1zCMOEC+45zlZWEYkkql4nFc1yWXyzFv3jyGDh3KiBEjsG27Xf1ta1i7di3Tp0/nv//7v1m/fn38c2gNzvfo0YNzzz2Xr371q/Tv358wDDn//PPp0aMHP/3pT2lsbMRxHLp3706vXr0A4mNUDtWLiIiIiIiIiIiIiIiIiIiIiIiIyN5TwF1ERDrkOE7c7TyKIlzXxTRNbNuOQ9zl8Hq547pt23F39mQySSKRwPM8gLjru+M4JBKJeF3XdUkkEiSTyXic8ro7zun7frt1oTVEv3r1ah588EGmTp3Kxz/+ca644gqOPPJIunXrhm3bcef2KIpYs2YNDz74IJMnT6apqaldN/ZkMkn//v357Gc/yzXXXEOfPn2IoohUKkXfvn05/fTTcRyHSZMm0dTUxOGHH45t23HH+nJ95fpFRERERERERPbUORMvBuDJaVM6uRIRERERERERERERkc6lgLuIiHSo3Pk8kUi0686eSCRwXbddV/Xysrbd2YF2AXfTNONxy+uWxy2H4cuh+lQq1a77enmccud20zQplUqEYcjGjRu5//77+e1vf4vjOKxdu5bGxkZuu+02Bg8eTLdu3QjDkCAIaGlpYcqUKUyaNInm5uZ24fZEIkGPHj0477zzuP766+nXrx9hGOJ5Xhx+P+yww7jooovo1q0bd955J3379sWyrHb7Vt6XIFQXdxEREREREREREREREREREREREZG9pYC7iIh0KJvN4vs+xWKRRCJBJpPB8zxyuRyZTAbTNHEchyiKyGQyBEFAoVAglUqRzWYplUoUi0XS6TQApVKJKIrIZrN4nkehUMCyLDKZDK7r4jgOlZWVBEEQB90zmQy+75PL5Uin03EIvhxMX716NXfccQePP/44juMQhiGFQoEFCxZw44038rWvfY3jjz+eXr16sXz5ch544AF+97vf0dLSEo8Brd3le/bsyeWXX86Xv/xlevfujeM42LZNNpvFcRxc1yWTyRCGIePHj6d79+40NDTQrVs3isUilmVhWRalUgnHcchUZDvlcRMRERERERERERERERERERERERE5mCngLiIiHXJdF4BksvWlwvd9ACzLIggCgiAgkUgQRRG+7xNFEalUCiDuel7u/h5FEYlEYqdxy9sahoFlWXieRxRF7eaMogjLsgjDMB4nl8vR0NDAXXfdxZNPPsnWrVvjrvFhGFIsFnnxxRcB+PrXv06/fv2YPHkyDz/8MBs3bozXLe/PwIEDueyyy7jkkkvo1asXpmliWRZRFOF5HqZpYhhGvC+HHXYYJ598MkcffTTZbJZEIhHXV95WREREREREREREREREpCv7z//8z/j297///S4zloiIiIiIiALuIiLSIdd1SSaT2LZNEATxfcuyKBaLRFGEbduYpkmxWMQ0TdLpNJ7n4boulmWRSqUoFosYhoFt2xiGQT6fJ5VKxYF2z/OwLItkMkk+n8c0TWzbJooiSqUSiUQC27ZxHCcOm69atYpf//rXPPLII7iu2y6wDq0h91wuxwsvvMDGjRs55phjmDlzJuvWrYs7txuGQTKZ5EMf+hCXXHIJl19+OVVVVXGo3rZtXNfFdV1s2yaRSLTbl1QqRTKZJJVKkUqlcF0X3/fjfQnCqKPDKiIiIiIiIiIiIiIiItIl/OAHP4hvv99Q+r4cS0RERERERAF3ERHpUEVFBUEQUCqV4lB3EAQUi0VSqRSGYeB5HkDc7bxYLJJIJEin0/i+T6lUiruZlzu3V1RUxMvKYXbf9/E8j3Q6TRRFuK6705zJZBLf96mvr+dHP/oRTz/9NI7j7HYfCoUCixcv5uWXX447rJelUil69OjBt7/9bc4991y6detGGIbt9iWZTMb7Ug6vl/fFMIx2+5JIJOIaPc/DstP742EREREREREREREREREREREREREROaQp4C4iIrtkGAZR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kX+UfOqpF3php27LW8fh9mk51TXb1ycPv2HN50lWinHQfPOm5O03JjsvSV7zR8fOu/0NyZ7rkkvWvMqvDJJWPdnxo8k970nuPUFt778t2b02tL/6OLUWkxuuSR64LLnlt088DwAAAAAAAAAAALwQ1fUuAIDzw7XXJTurSXrJ57+85sCXkgd7482f+rH5599w0+Fw+4Gnk/d9PKn8WtL+tWTXZ5P79ic7diU75k2wNfnSTavh9kFy39eTXXcllQ8klQ8n73soOdBK3n75vAnmu/vjSeWupHJvcmB13333ru6763D39qO9/apkZXItdyWV3cndk4NL42t96onkrt8bH2//WnL5p5OvPT8esuOq5P1HT3pl8vlJuH0l+dQXksvvStofSCq/lfzGt5NclNx00fzrufOdh8PtT307ueXDax6nh8dvKth8WfKht77ghwoAAAAAAAAAAACOS8AdgLPi3ZeNPx54PPngUcc+/+T44/ZXJ7fPOnlrsvuqceB75Znklv8zufvbhw8/+EBy3d3Jp/bNX//2n02uXRxv3/el5LrPJQ9ODu5L7v5MsuvfHg6on3GtZPuhY69lajCuc9tvJR985PDuvd9Irrl/tc5mcu3rjjztQ9clO+rj8z/2meSWryR7JwefSO74eHLzQ8ep68rk3VesrvWfk20fX/O47kvu/lRy12q9O66c8/UCAAAAAAAAAACAUyTgDsCZtyu5Zst4c8+McPUH/3I1sL0hefs1M87/yWRnfbz52c8n985Z5pY/mx9Qv+kV448r30mu+8rsMXu/ktzzzJwJzoCvPTT/WvLHyXVfnnNsT7L6noBse/mRh6592fjj3oeTdz2Sme79THLfyuxjd16TbE+SXvKxP5g95u4HkqeSZENy09XzLgAAAAAAAAAAAABeuPp6FwDAue/Oq5NLkuS55LMPzBiwJ9nzM8kNG5JrXjv+/IjzL1nd2J987NHjLLQnefKGZPPR+7cmOzaMNx+c1S19jW8eSnLR8cecFkWyZ16AfY2dVyY3X5nsuDDZsTHZdkHSqo+72R/jDcn21beuPTjrcV5j76HMnGTyRoRZnfanHkr2v238Nd328vHnAAAAAAAAAAAAcDoIuANwxt282j09G5KP7k4+epyxrcuSDyV535p9Ozaubqwk951KAf9Nsprbzv59pzLBGdA73IV9lu1XJffcmOxc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xS9+8YuxLgQAAAAAAAAAAAAAAMjgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRBXFh6tAAAgAElEQVTgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAAAAAABARRDgDgAAAAAAAPz/7NqxAAAAAMAgf+tp7CiOAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAAAAAAAAAAAAAYEFwBwAAAAAAAAAAAABgQXAHAAAAAAAAAAAAAGBBcAcAYteOBQAAAAAG+VtPY0dxBAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAIqfkqoAACAASURBVAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAAAAAAuCOwAAAAAAAAAAAAAAC4I7AAAAAAAAAAAAAAALgjsAAAAAAAAAAMSuHQsAAAAADPK3nsaO4ggAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAAAAAAAAAAAAWBDcAQAAAAAAAAAAAABYENwBAAAAAAAAAAAAAFgQ3AEAAKB27VgAAAAAYJC/9TR2FEcAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAlKegtQAABWZJREFUAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAQsZEspXgo66nAAAAAElFTkSuQmCC",
+                "mime_type": "image/png",
+                "name": "screenshot"
+              }
+            ],
+            "result": {
+              "duration": 1659834300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 99216100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I enter a Symbol or date",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.i_enter_a_symbol_or_date()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10110700000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "there are no matching records",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.there_are_no_matching_records()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div/table/tbody/tr/td[8]/a[1]\"}\n  (Session info: chrome\u003d91.0.4472.124)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-GV2C5M4\u0027, ip: \u0027192.168.1.233\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\IHSANS~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 07683ddbc9750a22994ae64b810f6001\n*** Element info: {Using\u003dxpath, value\u003d/html/body/div/table/tbody/tr/td[8]/a[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\r\n\tat step_definitions.SearchFunctionalityTestSteps.the_system_should_display_an_empty_table(SearchFunctionalityTestSteps.java:201)\r\n\tat ✽.the system should display an empty table(file:///C:/Users/Ihsan%20Sadak/RealCucumberFrameworkRepo/./src/test/resources/features/SearchFunctionalityValid.feature:34)\r\n",
+              "duration": 10063576400,
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "the system should display an empty table",
+            "match": {
+              "location": "step_definitions.SearchFunctionalityTestSteps.the_system_should_display_an_empty_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@SearchFunctionalityNoMatch"
+          }
+        ]
+      }
+    ],
+    "name": "Trade Jorunal Search Functionality Valid tests",
+    "description": "",
+    "id": "trade-jorunal-search-functionality-valid-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SearchFunctionalityValid.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
