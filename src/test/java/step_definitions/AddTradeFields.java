@@ -2,8 +2,8 @@ package step_definitions;
 
 import org.junit.Assert;
 
-import Pages.TradeJornalPage;
 import io.cucumber.java.en.Then;
+import pages.TradeJornalPage;
 import utilities.BrowserUtils;
 
 public class AddTradeFields {
