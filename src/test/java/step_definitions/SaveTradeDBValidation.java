@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.junit.Assert;
 
-import Pages.TradeJornalPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.TradeJornalPage;
 import utilities.BrowserUtils;
 import utilities.Driver;
 import utilities.PropertiesReader;
