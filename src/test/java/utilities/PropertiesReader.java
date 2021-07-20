@@ -5,11 +5,8 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class PropertiesReader {
-private static Properties config;
 	
-	private PropertiesReader() {
-		
-	}
+private static Properties config;
 	
 	static {
 		
