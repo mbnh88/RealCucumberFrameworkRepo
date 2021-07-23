@@ -7,10 +7,10 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import Pages.TradeJornalPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.TradeJornalPage;
 import utilities.BrowserUtils;
 import utilities.Driver;
 

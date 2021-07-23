@@ -5,11 +5,11 @@ import java.util.List;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
-import Pages.TradeJornalPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.TradeJornalPage;
 import utilities.BrowserUtils;
 import utilities.Driver;
 

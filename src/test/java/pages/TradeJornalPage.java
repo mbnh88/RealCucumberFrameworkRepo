@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import java.util.List;
 
@@ -139,4 +139,8 @@ public class TradeJornalPage {
 	
 	@FindBy (xpath="//div[text()='You have been signed out']")
 	public WebElement successfulLogoutMessage;
+	
+	//Trade Table list of column elements in a searched row
+	@FindBy(xpath="//table[@class='table table-bordered table-striped']/tbody/tr/td")
+	public List<WebElement> searchRowTableData;
 }
