@@ -19,7 +19,7 @@ public class StockTrade_LogInFunc_InvalidUsername_Password {
 	@Given("i am on the trade journal page")
 	public void i_am_on_the_trade_journal_page() {
 
-		Driver.getDriver().get(PropertiesReader.getProperty("StockTrade"));
+		Driver.getDriver().get(PropertiesReader.getProperty("tradeJournalURL"));
 
 	}
 

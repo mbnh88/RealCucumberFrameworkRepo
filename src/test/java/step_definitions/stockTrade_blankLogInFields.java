@@ -1,5 +1,9 @@
 package step_definitions;
 
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -19,13 +23,13 @@ public class stockTrade_blankLogInFields {
 	
 	@Given("i am on the trade journal log in page")
 	public void i_am_on_the_trade_journal_log_in_page() {
-		Driver.getDriver().get(PropertiesReader.getProperty("StockTrade"));
+		Driver.getDriver().get(PropertiesReader.getProperty("tradeJournalURL"));
 	}
 
 	@When("i leave username and password blank")
 	public void i_leave_username_and_password_blank() {
-		blank.blnkusername.sendKeys();
-		blank.blnkpassword.sendKeys();
+		blank.blnkusername.sendKeys("");
+		blank.blnkpassword.sendKeys("");
 	   
 	}
 
@@ -38,7 +42,9 @@ public class stockTrade_blankLogInFields {
 
 	@Then("i shoud get message {string}")
 	public void i_shoud_get_message(String string) {
-		
+		WebElement username =blank.blnkusername;
+		String validationMessage =username.getAttribute("validationMessage");
+		Assert.assertEquals(validationMessage, "Please fill out this field.");
 	   
 	}
 
